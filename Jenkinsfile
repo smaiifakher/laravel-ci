@@ -43,7 +43,7 @@ pipeline {
         stage('Serve') {
             steps{
                 script{
-                    sh "php artisan serve"
+                    sh "./vendor/bin/sail up"
                 }
             }
         }
