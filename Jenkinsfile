@@ -11,7 +11,7 @@ pipeline {
                 }
             }
         }
-                stage('Serve') {
+                stage('Sail') {
                     steps{
                         script{
                             sh "./vendor/bin/sail up"
