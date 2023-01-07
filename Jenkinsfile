@@ -11,6 +11,13 @@ pipeline {
                 }
             }
         }
+                stage('Serve') {
+                    steps{
+                        script{
+                            sh "./vendor/bin/sail up"
+                        }
+                    }
+                }
         stage('Composer') {
              steps{
                 script{
